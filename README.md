@@ -8,7 +8,7 @@ This project provides:
 
 The project is designed to be executed as standard `.py` scripts (not Jupyter Notebook).
 
----
+
 
 ## Features
 
@@ -27,7 +27,6 @@ The project is designed to be executed as standard `.py` scripts (not Jupyter No
 - Uses optimization level `-O2` (removes docstrings and asserts)
 - Useful for **source code protection** and **controlled deployment**
 
----
 
 ## Project Structure
 
@@ -47,7 +46,6 @@ project/
 
 ````
 
----
 
 ## Requirements
 
@@ -61,7 +59,6 @@ pip install opencv-python numpy
 
 ⚠️ Do **NOT** use `opencv-python-headless`, as GUI windows are required.
 
----
 
 ## Image Grid Viewer Usage
 
@@ -76,7 +73,6 @@ The image viewer loads four images and displays them in a **2×2 grid**:
 
 Each image is resized and labeled for easy comparison.
 
----
 
 ### Run the Viewer
 
@@ -90,7 +86,6 @@ python main.py
 * Images are displayed in a grid
 * Press **any key** to close the window
 
----
 
 ## Python Bytecode Compilation
 
@@ -103,7 +98,6 @@ python main.py
 
 ⚠️ `.pyc` files are **Python-version dependent**.
 
----
 
 ### Run the Compiler
 
@@ -114,7 +108,7 @@ python py_compile.py
 ### Output Example
 
 ```
-Compiled image_grid_viewer.py -> pyc/image_grid_viewer.pyc
+Compiled  py_compile.py -> pyc/image_grid_viewer.pyc
 ```
 
 Compiled files will be placed in:
@@ -123,8 +117,6 @@ Compiled files will be placed in:
 pyc/
 └── image_grid_viewer.pyc
 ```
-
----
 
 ## Using the Compiled `.pyc` Files
 
@@ -146,8 +138,6 @@ image_grid_viewer.main()
 
 ⚠️ If both `.py` and `.pyc` exist, Python will always prefer `.py`.
 
----
-
 ## Important Notes
 
 * Compile and run using the **same Python version**
@@ -155,35 +145,3 @@ image_grid_viewer.main()
 * Remove `.py` files if you want to enforce `.pyc` usage
 * Ensure OpenCV GUI support is available on the target system
 
----
-
-## Typical Use Cases
-
-* Internal tools
-* Manufacturing or testing utilities
-* Image comparison and debugging
-* Controlled deployment environments
-* Embedded or restricted systems
-
----
-
-## License
-
-This project is intended for internal or educational use.
-Adapt and extend as needed.
-
-```
-
----
-
-## 如果你要再升級 README（我可以直接幫你補）
-
-- 📸 加上「視窗顯示示意圖」
-- 🧪 加上 troubleshooting（GUI 無法顯示）
-- 📦 加上 deployment / release 說明
-- 🔒 加上 pyc 保護限制說明
-- 🧑‍💻 改成「公司內部工具文件風格」
-
-你可以直接說一句：  
-👉「幫我改成公司內部交付版本 README」
-```
